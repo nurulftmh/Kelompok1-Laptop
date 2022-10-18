@@ -1,5 +1,6 @@
-//E1E120018
-
+//E1E120018_NURUL FATIMAH
+//E1E120066_FADILAH HAIRUL NISA
+//E1E120026_DENI HIDAYAT
 #include<gl/glut.h>
 #include <math.h>
 
@@ -27,7 +28,7 @@ void ukur(int lebar, int tinggi){
 
 
 void myinit(void){
-    glClearColor (1, 1, 1, 0.0);
+    glClearColor (0, 0, 0, 0.0);
     glMatrixMode(GL_PROJECTION);
     glEnable(GL_DEPTH_TEST);
 
@@ -62,30 +63,8 @@ void mouseMotion(int x, int y){
     }
 }
 
-
-//void keyboard(unsigned char key, int x, int y)
-//{
-//  switch (key)
-//  {
-//    //buka laptop
-//    case 'l':
-//    laptop=laptop-5;
-//    if (laptop<-60) laptop=-60;
-//    glutPostRedisplay();
-//    break;
-//    //tutup laptop
-//    case 'k':
-//    laptop=laptop+5;
-//    if (laptop>90) laptop=90;
-//    glutPostRedisplay();
-//    break;
-//
-//
-//  }
-//}
-
-void dda(int i, int j, int k, int l) {
-	int x1, y1, x2, y2;
+void dda(int i, int j, int a, int k, int l, int b) {
+	int x1, y1, x2, y2, z1, z2;
 	float x,y,dx, dy, steps, x_inc, y_inc;
 	//tentukan titik awal dan akhir
 	x1 = i;
@@ -94,6 +73,8 @@ void dda(int i, int j, int k, int l) {
 	y2 = l;
 	x = x1;
 	y = y1;
+	z1 = a;
+	z2 = b;
 
 	//hitung dx dan dy
 	dx = x2 - x1;
@@ -111,13 +92,13 @@ void dda(int i, int j, int k, int l) {
 
 	//gambar titik awal
 	glBegin(GL_POINTS);
-	glVertex2i(round(x), round(y)); // gambar titik awal
+	glVertex3i(round(x), round(y), z1); // gambar titik awal
 
 	//perulangan untuk menggambar titik-titik
 	do {
 		x += x_inc; // x = x + x_inc
 		y += y_inc; // y = y + y_inc
-		glVertex2i(round(x), round(y)); //gambar titik
+		glVertex3i(round(x), round(y), z2); //gambar titik
 	} while (x < x2);
 
 	glEnd();
@@ -223,7 +204,7 @@ void laptop(void){
     glVertex3f(-80, -110, 10);
     glEnd();
     glBegin(GL_QUADS);
-    glColor3f(0,1,1);
+    glColor3f(0.6, 0.8, 0.8);
     glVertex3f(-70, -20, 5);
     glVertex3f(70, -20, 5);
     glVertex3f(80, -100, 15);
@@ -274,6 +255,15 @@ void laptop(void){
     glVertex3f(25, -68, 16);
     glVertex3f(26, -97, 15);
     glVertex3f(-26, -97, 15);
+    glEnd();
+
+    //keycaps
+    glBegin(GL_QUADS);
+    glColor3f(0.4, 0.4, 0.4);
+    dda(-61, -30, 10, 61, -30, 10);
+    dda(-63, -40, 10, 63, -40, 10);
+    dda(-65, -50, 10, 65, -50, 10);
+    dda(-67, -60, 13, 67, -60, 13);
     glEnd();
 
 glPushMatrix();
