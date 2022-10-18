@@ -159,7 +159,7 @@ void laptop(void){
 
     //tutup atas
     glBegin(GL_QUADS);
-    glColor3f(1,0,0);
+    glColor3ub(82, 82, 82);
     glVertex3f(-70, 80, 0);
     glVertex3f(70, 80, 0);
     glVertex3f(70, 80, 5);
@@ -168,7 +168,7 @@ void laptop(void){
 
     //tutup kanan
     glBegin(GL_QUADS);
-    glColor3f(1,0,0);
+    glColor3ub(82, 82, 82);
     glVertex3f(70, -20, 5);
     glVertex3f(70, 80, 5);
     glVertex3f(70, 80, 0);
@@ -177,7 +177,7 @@ void laptop(void){
 
     //tutup bawah
     glBegin(GL_QUADS);
-    glColor3f(1,0,0);
+    glColor3ub(82, 82, 82);
     glVertex3f(-70, -20, 5);
     glVertex3f(70, -20, 5);
     glVertex3f(70, -20, 0);
@@ -186,7 +186,7 @@ void laptop(void){
 
     //tutup kiri
     glBegin(GL_POLYGON);
-    glColor3f(0,1,0);
+    glColor3ub(82, 82, 82);
     glVertex3f(-70, 80, 5);
     glVertex3f(-70, 80, 0);
     glVertex3f(-70, -20, 0);
@@ -222,7 +222,7 @@ void laptop(void){
 
     //tutup kanan
     glBegin(GL_QUADS);
-    glColor3f(0,1,0);
+    glColor3f(.7, 0.8, 0.8);
     glVertex3f(70, -20, 5);
     glVertex3f(70, -20, 0);
     glVertex3f(80, -110, 10);
@@ -231,7 +231,7 @@ void laptop(void){
 
     //tutup kiri
     glBegin(GL_QUADS);
-    glColor3f(0,1,0);
+    glColor3f(.7, 0.8, 0.8);
     glVertex3f(-70, -20, 5);
     glVertex3f(-70, -20, 0);
     glVertex3f(-80, -110, 10);
@@ -250,7 +250,7 @@ void laptop(void){
 
     //kursor
     glBegin(GL_QUADS);
-    glColor3f(0.7, 0.8, 0.8);
+    glColor3f(0.6, 0.8, 0.8);
     glVertex3f(-25, -68, 16);
     glVertex3f(25, -68, 16);
     glVertex3f(26, -97, 15);
