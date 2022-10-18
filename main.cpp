@@ -27,7 +27,7 @@ void ukur(int lebar, int tinggi){
 
 
 void myinit(void){
-    glClearColor (1, 1, 1, 0.0);
+    glClearColor (0, 0, 0, 0.0);
     glMatrixMode(GL_PROJECTION);
     glEnable(GL_DEPTH_TEST);
 
@@ -203,7 +203,7 @@ void laptop(void){
     glVertex3f(-80, -110, 10);
     glEnd();
     glBegin(GL_QUADS);
-    glColor3f(0,1,1);
+    glColor3f(0.6, 0.8, 0.8);
     glVertex3f(-70, -20, 5);
     glVertex3f(70, -20, 5);
     glVertex3f(80, -100, 15);
