@@ -63,7 +63,7 @@ void mouseMotion(int x, int y){
 }
 
 void dda(int i, int j, int a, int k, int l, int b) {
-	int x1, y1, x2, y2;
+	int x1, y1, x2, y2, z1, z2;
 	float x,y,dx, dy, steps, x_inc, y_inc;
 	//tentukan titik awal dan akhir
 	x1 = i;
@@ -91,13 +91,13 @@ void dda(int i, int j, int a, int k, int l, int b) {
 
 	//gambar titik awal
 	glBegin(GL_POINTS);
-	glVertex2i(round(x), round(y)); // gambar titik awal
+	glVertex3i(round(x), round(y), z1); // gambar titik awal
 
 	//perulangan untuk menggambar titik-titik
 	do {
 		x += x_inc; // x = x + x_inc
 		y += y_inc; // y = y + y_inc
-		glVertex2i(round(x), round(y)); //gambar titik
+		glVertex3i(round(x), round(y), z2); //gambar titik
 	} while (x < x2);
 
 	glEnd();
@@ -260,8 +260,8 @@ void laptop(void){
     glBegin(GL_QUADS);
     glColor3f(0.4, 0.4, 0.4);
     dda(-61, -30, 10, 61, -30, 10);
-    dda(-63, -50, 10, 63, -40, 10);
-    dda(-65, -40, 10, 65, -50, 10);
+    dda(-63, -40, 10, 63, -40, 10);
+    dda(-65, -50, 10, 65, -50, 10);
     dda(-67, -60, 13, 67, -60, 13);
     glEnd();
 
