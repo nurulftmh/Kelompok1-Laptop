@@ -62,28 +62,6 @@ void mouseMotion(int x, int y){
     }
 }
 
-
-//void keyboard(unsigned char key, int x, int y)
-//{
-//  switch (key)
-//  {
-//    //buka laptop
-//    case 'l':
-//    laptop=laptop-5;
-//    if (laptop<-60) laptop=-60;
-//    glutPostRedisplay();
-//    break;
-//    //tutup laptop
-//    case 'k':
-//    laptop=laptop+5;
-//    if (laptop>90) laptop=90;
-//    glutPostRedisplay();
-//    break;
-//
-//
-//  }
-//}
-
 void dda(int i, int j, int k, int l) {
 	int x1, y1, x2, y2;
 	float x,y,dx, dy, steps, x_inc, y_inc;
