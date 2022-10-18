@@ -204,7 +204,7 @@ void laptop(void){
     glVertex3f(-80, -110, 10);
     glEnd();
     glBegin(GL_QUADS);
-    glColor3f(0.6, 0.8, 0.8);
+    glColor3f(0.7, 0.8, 0.8);
     glVertex3f(-70, -20, 5);
     glVertex3f(70, -20, 5);
     glVertex3f(80, -100, 15);
@@ -250,7 +250,7 @@ void laptop(void){
 
     //kursor
     glBegin(GL_QUADS);
-    glColor3f(0,1,0);
+    glColor3f(0.7, 0.8, 0.8);
     glVertex3f(-25, -68, 16);
     glVertex3f(25, -68, 16);
     glVertex3f(26, -97, 15);
