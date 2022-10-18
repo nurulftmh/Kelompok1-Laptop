@@ -1,4 +1,5 @@
-//E1E120066
+//E1E120066_FADILAH HAIRUL NISA
+//E1E120026_DENI HIDAYAT
 #include<gl/glut.h>
 #include <math.h>
 
