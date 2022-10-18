@@ -62,7 +62,7 @@ void mouseMotion(int x, int y){
     }
 }
 
-void dda(int i, int j, int k, int l) {
+void dda(int i, int j, int a, int k, int l, int b) {
 	int x1, y1, x2, y2;
 	float x,y,dx, dy, steps, x_inc, y_inc;
 	//tentukan titik awal dan akhir
@@ -72,6 +72,8 @@ void dda(int i, int j, int k, int l) {
 	y2 = l;
 	x = x1;
 	y = y1;
+	z1 = a;
+	z2 = b;
 
 	//hitung dx dan dy
 	dx = x2 - x1;
@@ -252,6 +254,15 @@ void laptop(void){
     glVertex3f(25, -68, 16);
     glVertex3f(26, -97, 15);
     glVertex3f(-26, -97, 15);
+    glEnd();
+
+    //keycaps
+    glBegin(GL_QUADS);
+    glColor3f(0.4, 0.4, 0.4);
+    dda(-61, -30, 10, 61, -30, 10);
+    dda(-63, -50, 10, 63, -40, 10);
+    dda(-65, -40, 10, 65, -50, 10);
+    dda(-67, -60, 13, 67, -60, 13);
     glEnd();
 
 glPushMatrix();
