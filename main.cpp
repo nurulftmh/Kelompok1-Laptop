@@ -1,6 +1,10 @@
+//E1E120024_AFDHALUL RAHMAT S
 //E1E120018_NURUL FATIMAH
 //E1E120066_FADILAH HAIRUL NISA
 //E1E120026_DENI HIDAYAT
+//E1E120106_KATHARINA AMELIA
+//E1E120064_DERIS ALFIKAR
+//E1E12062_ASRI SAMSUDIN
 #include<gl/glut.h>
 #include <math.h>
 
@@ -117,7 +121,6 @@ void laptop(void){
     glRotatef(xrot, 1, 0,0);
     glRotatef(yrot, 0,1,0);
     glPushMatrix();
-
     glTranslatef( gerak, 0,0);//UNTUK MENGGERAKKAN BENDA
 
 //layar
@@ -213,7 +216,7 @@ void laptop(void){
 
     //tutup depan
     glBegin(GL_QUADS);
-    glColor3f(1, 0, 0);
+    glColor3f(0.7, 0.8, 0.8);
     glVertex3f(80, -100, 15);
     glVertex3f(80, -110, 10);
     glVertex3f(-80, -110, 10);
@@ -250,7 +253,7 @@ void laptop(void){
 
     //kursor
     glBegin(GL_QUADS);
-    glColor3f(0.6, 0.8, 0.8);
+    glColor3f(0.9, 0.9, 0.8);
     glVertex3f(-25, -68, 16);
     glVertex3f(25, -68, 16);
     glVertex3f(26, -97, 15);
