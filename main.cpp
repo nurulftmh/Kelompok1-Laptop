@@ -294,4 +294,8 @@ int main(int argc, char **argv){
     //kettypuny
 }
 // perubahan fatimah lagi
+<<<<<<< HEAD
 // perubahan branch1
+=======
+// perubahan branch2
+>>>>>>> branch2
